@@ -1,0 +1,151 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(20px);
+}
+
+.header__navbar {
+    padding: 0;
+}
+
+.header__link {
+    font-size: 18px;
+    line-height: 22px;
+    color: #1E1E1E;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+}
+
+.subtitle {
+    font-size: 30px;
+    line-height: 37px;
+}
+
+.button {
+    background: linear-gradient(102.96deg, #62D98A 0%, #3DD4A1 100%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    padding: 16.5px 30px;
+    color: #FFFFFF;
+    font-size: 30px;
+    line-height: 37px;
+}
+.input {
+
+}
+.bold {
+    font-weight: bold;
+}
+
+.link__see_more {
+    cursor: pointer;
+    color: #1E1E1E;
+    opacity: 0.5;
+    font-size: 16px;
+    line-height: 40px;
+    text-decoration-line: underline;
+}
+
+.link__see_more:active, .link__see_more:hover, .link__see_more:focus {
+    opacity: 1;
+}
+
+.banner_wrapper {
+    background: #C4C4C4;
+    color: #FFFFFF;
+}
+
+.banner__header {}
+
+.banner__subheader {
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.banner__text {
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.banner__button {}
+
+.about_wrapper {
+    background: #EFF3F1;
+    color: #1E1E1E;
+}
+
+.about__header {}
+
+.about__text {
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.themes_wrapper {
+    background: #FFFFFF;
+    color: #1E1E1E;
+}
+
+.themes__block_wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.themes__block {
+    width: 20%;
+}
+
+.themes__block__text {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+}
+
+.callback_banner_wrapper {
+    background: rgba(255, 255, 255, 0.5) url("../images/callback_banner__bg.png") no-repeat;
+    background-size: cover;
+}
+
+.services_wrapper {
+    background: #FFFFFF;
+    color: #1E1E1E;
+}
+
+.services__block_wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.services__block {
+    width: 33%;
+}
+
+.services__block__text {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.7) url("../images/footer__bg.png") no-repeat;
+    backdrop-filter: blur(20px);
+    background-size: cover;
+    color: #FFFFFF;
+}

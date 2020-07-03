@@ -12,6 +12,11 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Психолог Светлана Букачёва</title>
   </head>
   <body>
@@ -19,8 +24,8 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <nav class="navbar navbar-expand-lg">
-              <a class="navbar-brand" href="#">
+            <nav class="navbar navbar-expand-lg header__navbar">
+              <a class="navbar-brand" href="/">
                 <img src="./assets/images/Logo.png" />
               </a>
               <button
@@ -37,19 +42,19 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                   <li class="nav-item active">
-                    <a class="nav-link" href="#">Обо мне</a>
+                    <a class="nav-link header__link" href="#">Обо мне</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Сертификаты</a>
+                    <a class="nav-link header__link" href="#">Сертификаты</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Отзывы</a>
+                    <a class="nav-link header__link" href="#">Отзывы</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Статьи</a>
+                    <a class="nav-link header__link" href="#">Статьи</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Контакты</a>
+                    <a class="nav-link header__link" href="#">Контакты</a>
                   </li>
                 </ul>
               </div>
@@ -58,59 +63,70 @@
         </div>
       </div>
     </header>
-    <section class="banner">
+    <section class="banner_wrapper">
       <div class="container">
         <div class="row">
           <div class="col">
-            <div class="">
-              <div>
-                <h1>Светлана Букачёва</h1>
-                <span>- практикующий психолог.</span>
+            <div class="banner">
+              <div class="banner__header_wrapper">
+                <h1 class="banner__header title">Светлана Букачёва</h1>
+                <span class="banner__subheader">
+                  - практикующий психолог.
+                </span>
               </div>
-              <div>
-                <p>
-                  Невозможное возможно! Мечтай и действуй! Все ограничения у нас
-                  в голове!
+              <div class="banner__text_wrapper">
+                <p class="banner__text">
+                  Невозможное возможно! <br />
+                  Мечтай и действуй! <br />
+                  Все ограничения у нас в голове!
                 </p>
               </div>
-              <div>
-                <button>Записаться на консультацию</button>
+              <div class="banner__button_wrapper">
+                <button class="banner__button button">
+                  Записаться на консультацию
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="about">
+    <section class="about_wrapper">
       <div class="container">
         <div class="row">
           <div class="col">
-            <div>
-              <div>
-                <h2>Обо мне</h2>
+            <div class="about">
+              <div class="about__header_wrapper">
+                <h2 class="about__header title">Обо мне</h2>
               </div>
-              <div>
-                <div>
+              <div class="about__info">
+                <div class="about__img_wrapper">
                   <img
                     src="./assets/images/about_me.png"
                     alt="Светлана Букачёва"
                     title="Практикующий психолог Светлана Букачёва"
+                    class="about__img"
                   />
                 </div>
-                <div>
-                  <p>
-                    Букачёва Светлана - практикующий психолог, любящая своё
-                    дело! Люди обращаются ко мне не в лучшие периоды своей
-                    жизни. Приходят с тревогами, страхами, проблемами и
-                    ошибками. Постоянно развиваюсь и совершенствуюсь! Ценю жизнь
-                    во всех её проявлениях! Активный отдых, природа,
-                    путешествия. Моё имя напрямую характеризует меня, как
-                    источник СВЕТА для тех, кто рядом со мной. Освещаю путь тем,
-                    кто заблудился, помогаю поверить в себя! Согреваю теплом,
-                    заряжаю энергией! Чего ждут от психолога? Вещей простых и
-                    душевных: понимания и помощи. Понимания того, что творится в
-                    душе и помощи в принятии и осознании самих себя. Профессия
-                    дарит мне встречи,открытия, общение с разными людьми.
+                <div class="about__text_wrapper">
+                  <p class="about__text">
+                    <span class="bold">Букачёва Светлана</span> - практикующий
+                    психолог, любящая своё дело!<br />
+                    Люди обращаются ко мне не в лучшие периоды своей жизни.
+                    Приходят с тревогами, страхами, проблемами и ошибками.<br />
+                    Постоянно развиваюсь и совершенствуюсь!<br />
+                    Ценю жизнь во всех её проявлениях! Активный отдых, природа,
+                    путешествия.<br />
+                    Моё имя напрямую характеризует меня, как источник СВЕТА для
+                    тех, кто рядом со мной. Освещаю путь тем, кто заблудился,
+                    помогаю поверить в себя! Согреваю теплом, заряжаю
+                    энергией!<br />
+                    <span class="bold">Чего ждут от психолога?</span><br />
+                    Вещей простых и душевных: понимания и помощи. Понимания
+                    того, что творится в душе и помощи в принятии и осознании
+                    самих себя.<br />
+                    Профессия дарит мне встречи,открытия, общение с разными
+                    людьми.<br />
                     Благодарна своим клиентам за доверие и желание менять свою
                     жизнь, настойчивость и целеустремлённость.
                   </p>
@@ -121,55 +137,72 @@
         </div>
       </div>
     </section>
-    <section class="themes">
+    <section class="themes_wrapper">
       <div class="container">
         <div class="row">
           <div class="col">
-            <div>
-              <div>
-                <h2>Темы, с которыми ко мне обращаются</h2>
+            <div class="themes">
+              <div class="themes__header_wrapper">
+                <h2 class="themes__header title">
+                  Темы, с которыми ко мне обращаются
+                </h2>
               </div>
               <div>
-                <div>
-                  <div>
+                <div class="themes__block_wrapper">
+                  <div class="themes__block">
                     <img
                       src="./assets/images/themes/1.png"
                       alt=""
                       title="Женско-мужские отношения"
+                      class="themes__block__img"
                     />
-                    <span>Женско-мужские отношения</span>
+                    <span class="themes__block__text"
+                      >Женско-мужские отношения</span
+                    >
                   </div>
-                  <div>
+                  <div class="themes__block">
                     <img
                       src="./assets/images/themes/2.png"
                       alt=""
                       title="Развод и отношения после развода"
+                      class="themes__block__img"
                     />
-                    <span>Развод и отношения после развода</span>
+                    <span class="themes__block__text"
+                      >Развод и отношения после развода</span
+                    >
                   </div>
-                  <div>
+                  <div class="themes__block">
                     <img
                       src="./assets/images/themes/3.png"
                       alt=""
                       title="Одиночество, потеря смысла жизни"
+                      class="themes__block__img"
                     />
-                    <span>Одиночество, потеря смысла жизни</span>
+                    <span class="themes__block__text"
+                      >Одиночество, потеря смысла жизни</span
+                    >
                   </div>
-                  <div>
+                  <div class="themes__block">
                     <img
                       src="./assets/images/themes/4.png"
                       alt=""
                       title="Неудовлетворенность жизнью"
+                      class="themes__block__img"
                     />
-                    <span>Неудовлетворенность жизнью</span>
+                    <span class="themes__block__text"
+                      >Неудовлетворенность жизнью</span
+                    >
                   </div>
-                  <div>
+                  <div class="themes__block">
                     <img
                       src="./assets/images/themes/5.png"
                       alt=""
                       title="Неуверенность в себе"
+                      class="themes__block__img"
                     />
-                    <span>Неуверенность в себе</span>
+                    <span class="themes__block__text"
+                      >Неуверенность в себе</span
+                    >
                   </div>
                 </div>
               </div>
@@ -178,20 +211,37 @@
         </div>
       </div>
     </section>
-    <section class="callback_banner">
+    <section class="callback_banner_wrapper">
       <div class="container">
         <div class="row">
           <div class="col">
-            <div>
-              <div>
-                <h2>Хотите получить больше информации о моих услугах?</h2>
-                <span>Оставьте Ваш номер телефона и я перезвоню.</span>
+            <div class="callback_banner">
+              <div class="callback_banner__header_wrapper">
+                <h2 class="callback_banner__header title">
+                  Хотите получить больше информации о моих услугах?
+                </h2>
+                <span class="callback_banner__subheader subtitle"
+                  >Оставьте Ваш номер телефона и я перезвоню.</span
+                >
               </div>
-              <div>
-                <form>
-                  <input type="text" placeholder="Имя" />
-                  <input type="tel" placeholder="+375(__) ___ __ __" />
-                  <button type="submit">Заказать звонок</button>
+              <div class="callback_banner__form_wrapper">
+                <form class="callback_banner__form">
+                  <input
+                    type="text"
+                    placeholder="Имя"
+                    class="callback_banner__form__input"
+                  />
+                  <input
+                    type="tel"
+                    placeholder="+375(__) ___ __ __"
+                    class="callback_banner__form__input"
+                  />
+                  <button
+                    type="submit"
+                    class="callback_banner__form__button button"
+                  >
+                    Заказать звонок
+                  </button>
                 </form>
               </div>
             </div>
@@ -199,38 +249,43 @@
         </div>
       </div>
     </section>
-    <section class="services">
+    <section class="services_wrapper">
       <div class="container">
         <div class="row">
           <div class="col">
-            <div>
-              <div>
-                <h2>Услуги</h2>
+            <div class="services">
+              <div class="services__header_wrapper">
+                <h2 class="services__header title">Услуги</h2>
               </div>
-              <div>
-                <div>
+              <div class="services__block_wrapper">
+                <div class="services__block">
                   <img
                     src="./assets/images/services/individual.png"
                     alt="Услуги"
                     title="Индивидуальные консультации"
+                    class="services__block__img"
                   />
-                  <span>Индивидуальные консультации</span>
+                  <span class="services__block__text"
+                    >Индивидуальные консультации</span
+                  >
                 </div>
-                <div>
+                <div class="services__block">
                   <img
                     src="./assets/images/services/online.png"
                     alt="Услуги"
                     title="Онлайн-курсы"
+                    class="services__block__img"
                   />
-                  <span>Онлайн-курсы</span>
+                  <span class="services__block__text">Онлайн-курсы</span>
                 </div>
-                <div>
+                <div class="services__block">
                   <img
                     src="./assets/images/services/group.png"
                     alt="Услуги"
                     title="Групповые программы"
+                    class="services__block__img"
                   />
-                  <span>Групповые программы</span>
+                  <span class="services__block__text">Групповые программы</span>
                 </div>
               </div>
             </div>
@@ -238,15 +293,19 @@
         </div>
       </div>
     </section>
-    <section class="certificates">
+    <section class="certificates_wrapper">
       <div class="container">
         <div class="row">
           <div class="col">
-            <div>
-              <div>
-                <h2>Сертификаты и образование</h2>
-                <div>
-                  <p>
+            <div class="certificates">
+              <div class="certificates__info_wrapper">
+                <div class="certificates__header_wrapper">
+                  <h2 class="certificates__header title">
+                    Сертификаты и образование
+                  </h2>
+                </div>
+                <div class="certificates__text_wrapper">
+                  <p class="certificates__text">
                     Профессиональную деятельность начала с 2001 года. 11 лет
                     работала с подростками во внешкольном учреждении
                     образования. 7 лет - со студентами в вузе. Проводила
@@ -256,46 +315,46 @@
                   </p>
                 </div>
               </div>
-              <div>
-                //TODO add pictures
+              <div class="certificates__image_wrapper">
+                <!-- TODO add pictures -->
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="reviews">
+    <section class="reviews_wrapper">
       <div class="container">
         <div class="row">
           <div class="col">
-            <div>
-              <div>
-                <h2>Отзывы</h2>
+            <div class="reviews">
+              <div class="reviews__header_wrapper">
+                <h2 class="reviews__header title">Отзывы</h2>
               </div>
-              <div>
-                <div>
-                  <h3>Янина</h3>
-                  <p>
+              <div class="reviews__block_wrapper">
+                <div class="reviews__block">
+                  <h3 class="reviews__block__header">Янина</h3>
+                  <p class="reviews__block__text">
                     Света, я так счастлива, от того, что Вы мой психолог!
                     Столько с Вами прекрасных мгновений...
                   </p>
-                  <a>Показать больше</a>
+                  <a class="link__see_more">Показать больше</a>
                 </div>
-                <div>
-                  <h3>Юлия</h3>
-                  <p>
+                <div class="reviews__block">
+                  <h3 class="reviews__block__header">Юлия</h3>
+                  <p class="reviews__block__text">
                     Хочу сказать спасибо за марафон НеСовершеннаЯ. Я случайно
                     увидела анонс марафона зарегестрировалась...
                   </p>
-                  <a>Показать больше</a>
+                  <a class="link__see_more">Показать больше</a>
                 </div>
-                <div>
-                  <h3>Марина</h3>
-                  <p>
+                <div class="reviews__block">
+                  <h3 class="reviews__block__header">Марина</h3>
+                  <p class="reviews__block__text">
                     Я не любитель оставлять отзывы, но здесь не могла
                     удержаться!) Когда ты видишь изменения в себе...
                   </p>
-                  <a>Показать больше</a>
+                  <a class="link__see_more">Показать больше</a>
                 </div>
               </div>
             </div>
@@ -307,35 +366,100 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <div>
-              <h2>Остались вопросы?</h2>
-              <div>
-                <span>Вы можете задать их блабла</span>
-                <form>
-                  <input type="text" placeholder="Имя" />
-                  <input type="tel" placeholder="+375(__) ___ __ __" />
-                  <textarea placeholder="Сообщение"></textarea>
-                  <button type="submit">Задать вопрос</button>
+            <div class="footer_block">
+              <div class="footer__header_wrapper">
+                <h2 class="footer__header title">Остались вопросы?</h2>
+              </div>
+              <div class="footer__form_wrapper">
+                <span class="footer__form__title"
+                  >Вы можете задать их блабла</span
+                >
+                <form class="footer__form">
+                  <input
+                    type="text"
+                    placeholder="Имя"
+                    class="footer__form__input input"
+                  />
+                  <input
+                    type="tel"
+                    placeholder="+375(__) ___ __ __"
+                    class="footer__form__input input"
+                  />
+                  <textarea
+                    placeholder="Сообщение"
+                    class="footer__form__input input"
+                  ></textarea>
+                  <button type="submit" class="footer__form__button button">
+                    Задать вопрос
+                  </button>
                 </form>
               </div>
             </div>
           </div>
           <div class="col">
-            <div>
-              <h2>Контакты</h2>
-              <div>
-                <a>+375 (33) 662-02-39</a>
-                <a>+375 (29) 607-56-94</a>
-                <a>tusnak-psi@mail.ru</a>
-                <span>г. Могилев, пер. Комиссариатский, 5а, каб.6</span>
+            <div class="footer_block">
+              <div class="footer__header_wrapper">
+                <h2 class="footer__header title">Контакты</h2>
+              </div>
+              <div class="footer__info_wrapper">
+                <a
+                  href="viber://chat?number=%2B375336620239"
+                  class="footer__info__link footer__info__link__viber"
+                  >+375 (33) 662-02-39</a
+                >
+                <a
+                  href="whatsapp://send?phone=+375296075694"
+                  class="footer__info__link footer__info__link__whatsapp"
+                  >+375 (29) 607-56-94</a
+                >
+                <a
+                  href="mailto:tusnak-psi@mail.ru"
+                  class="footer__info__link footer__info__link__email"
+                  >tusnak-psi@mail.ru</a
+                >
+                <span class="footer__info__link footer__info__link__address"
+                  >г. Могилев, пер. Комиссариатский, 5а, каб.6</span
+                >
+              </div>
+              <div class="footer__social_wrapper">
+                <ul class="footer__social__list">
+                  <li class="footer__social__link_wrapper">
+                    <a
+                      href="https://instagram.com/bukachiovasvetlana"
+                      target="_blank"
+                      class="footer__social__link footer__social__link_inst"
+                    ></a>
+                  </li>
+                  <li class="footer__social__link_wrapper">
+                    <a
+                      href="https://vk.com/id64814843"
+                      target="_blank"
+                      class="footer__social__link footer__social__link_vk"
+                    ></a>
+                  </li>
+                  <li class="footer__social__link_wrapper">
+                    <a
+                      href=""
+                      target="_blank"
+                      class="footer__social__link footer__social__link_fb"
+                    ></a>
+                  </li>
+                  <li class="footer__social__link_wrapper">
+                    <a
+                      href="https://www.b17.ru/bukachova/"
+                      target="_blank"
+                      class="footer__social__link footer__social__link_b17"
+                    ></a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col">
-            <div>
-              <p>© 2020 «EasyHard»</p>
+            <div class="copyright_wrapper">
+              <p class="copyright">© 2020 «EasyHard»</p>
             </div>
           </div>
         </div>
