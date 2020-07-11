@@ -81,6 +81,14 @@ body {
     padding: 20px 38px;
 }
 
+.input:focus {
+    outline-color: #EFF3F1;
+}
+
+.textarea {
+    min-height: 140px;
+}
+
 .bold {
     font-weight: 500;
 }
@@ -341,13 +349,29 @@ header {
     color: #1E1E1E;
 }
 
-.reviews__block_wrapper {}
+.reviews_wrapper {
+    background-color: #FFFFFF;
+    padding: 150px 0 155px;
+    color: #1E1E1E;
+}
+
+.reviews__block_wrapper {
+    padding: 0 60px;
+}
 
 .reviews__block {
+    max-width: 410px;
+    width: 100%;
     background: #FFFFFF;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
-    padding: 40px 50px 50px;
+    /* padding: 40px 50px 50px; */
+    padding: 30px 25px;
+    margin: 20px 0;
+}
+
+.owl-carousel .active:nth-child(2) .reviews__block {
+    max-width: 476px;
 }
 
 .reviews__block__header {
@@ -369,7 +393,7 @@ header {
     width: 43px;
     background-size: contain;
     background-position: center;
-    background-image: url(../images/quotes.png);
+    background-image: url("../images/quotes.png");
 }
 
 .reviews__block__text {
@@ -378,11 +402,107 @@ header {
     margin-bottom: 20px;
 }
 
+.owl-carousel .owl-nav {}
+
+.owl-carousel .owl-nav button {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 33%;
+}
+
+.owl-carousel .owl-nav button:focus,
+.owl-carousel .owl-nav button:active,
+.owl-carousel .owl-nav button:hover {
+    border: none;
+    outline: none;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    background-image: url("../images/arrow_prev.png");
+    left: -60px;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    background-image: url("../images/arrow_next.png");
+    right: -60px;
+}
+
+.owl-carousel .owl-dots {
+    text-align: center;
+}
+
+.owl-carousel button.owl-dot {
+    margin: 0 4px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: linear-gradient(91.72deg, #62D98A 0%, #3DD4A1 100%);
+    opacity: 0.3;
+}
+
+.owl-carousel button.owl-dot.active {
+    opacity: 0.6;
+}
+
 footer {
     background: rgba(0, 0, 0, 0.7) url("../images/footer__bg.jpg") no-repeat;
-    backdrop-filter: blur(20px);
     background-size: cover;
     color: #FFFFFF;
+    padding: 150px 0 50px;
+}
+
+.footer__header {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.footer_block__left {
+    max-width: 450px;
+}
+
+.footer__form__title {
+    display: block;
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.footer__info_wrapper {
+    padding: 100px 0 0;
+}
+
+.footer__info__link {
+    display: block;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    color: #FFFFFF;
+    padding-left: 70px;
+    margin-bottom: 35px;
+    background-repeat: no-repeat;
+    background-size: 37px auto;
+    background-position: left top;
+}
+
+.footer__info__link:active,
+.footer__info__link:focus,
+.footer__info__link:hover {}
+
+.footer__info__link__viber {
+    background-image: url("../images/contacts_icons/viber.png");
+}
+
+.footer__info__link__whatsapp {
+    background-image: url("../images/contacts_icons/whatsapp.png");
+}
+
+.footer__info__link__email {
+    background-image: url("../images/contacts_icons/mail.png");
+}
+
+.footer__info__link__address {
+    background-image: url("../images/contacts_icons/map.png");
 }
 
 .copyright_wrapper {
@@ -390,10 +510,67 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 100px 0 0;
 }
 
 .copyright {
+    display: block;
     font-size: 24px;
     line-height: 29px;
     color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+
+/* modal */
+
+.modal {
+    top: 20%;
+}
+
+.modal-dialog {
+    max-width: 340px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.modal-content {
+    border: none;
+    align-items: flex-end;
+}
+
+.modal__close {
+    background-image: url("../images/close.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+}
+
+.modal-header {
+    border: none;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #1E1E1E;
+}
+
+.modal__form {
+    text-align: center;
+}
+
+.modal__form__input {}
+
+.modal__form__button {
+    width: 155px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 7px;
 }

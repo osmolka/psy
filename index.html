@@ -10,6 +10,7 @@
     <meta name="msapplication-TileImage" content="./assets/images/favicon/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/plugins/owlCarousel/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
     <title>Психолог Светлана Букачёва</title>
@@ -49,7 +50,7 @@
                                 <a class="header__phone" href="tel:+375296075694">
                   +375 (29) 607-56-94
                 </a>
-                                <button class="header__callback_button button">
+                                <button class="header__callback_button button" data-toggle="modal" data-target="#callback">
                   Заказать звонок
                 </button>
                             </div>
@@ -288,26 +289,49 @@
                             <h2 class="reviews__header title title__line">Отзывы</h2>
                         </div>
                         <div class="reviews__block_wrapper">
-                            <div class="reviews__block">
-                                <h3 class="reviews__block__header">Янина</h3>
-                                <p class="reviews__block__text">
-                                    Света, я так счастлива, от того, что Вы мой психолог! Столько с Вами прекрасных мгновений...
-                                </p>
-                                <a class="link__see_more">Показать больше</a>
-                            </div>
-                            <div class="reviews__block">
-                                <h3 class="reviews__block__header">Юлия</h3>
-                                <p class="reviews__block__text">
-                                    Хочу сказать спасибо за марафон НеСовершеннаЯ. Я случайно увидела анонс марафона зарегестрировалась...
-                                </p>
-                                <a class="link__see_more">Показать больше</a>
-                            </div>
-                            <div class="reviews__block">
-                                <h3 class="reviews__block__header">Марина</h3>
-                                <p class="reviews__block__text">
-                                    Я не любитель оставлять отзывы, но здесь не могла удержаться!) Когда ты видишь изменения в себе...
-                                </p>
-                                <a class="link__see_more">Показать больше</a>
+                            <div class="owl-carousel">
+                                <div class="reviews__block">
+                                    <h3 class="reviews__block__header">Янина</h3>
+                                    <p class="reviews__block__text">
+                                        Света, я так счастлива, от того, что Вы мой психолог! Столько с Вами прекрасных мгновений...
+                                    </p>
+                                    <a class="link__see_more">Показать больше</a>
+                                </div>
+                                <div class="reviews__block">
+                                    <h3 class="reviews__block__header">Юлия</h3>
+                                    <p class="reviews__block__text">
+                                        Хочу сказать спасибо за марафон НеСовершеннаЯ. Я случайно увидела анонс марафона зарегистрировалась...
+                                    </p>
+                                    <a class="link__see_more">Показать больше</a>
+                                </div>
+                                <div class="reviews__block">
+                                    <h3 class="reviews__block__header">Марина</h3>
+                                    <p class="reviews__block__text">
+                                        Я не любитель оставлять отзывы, но здесь не могла удержаться!) Когда ты видишь изменения в себе...
+                                    </p>
+                                    <a class="link__see_more">Показать больше</a>
+                                </div>
+                                <div class="reviews__block">
+                                    <h3 class="reviews__block__header">Марина</h3>
+                                    <p class="reviews__block__text">
+                                        Я не любитель оставлять отзывы, но здесь не могла удержаться!) Когда ты видишь изменения в себе...
+                                    </p>
+                                    <a class="link__see_more">Показать больше</a>
+                                </div>
+                                <div class="reviews__block">
+                                    <h3 class="reviews__block__header">Марина</h3>
+                                    <p class="reviews__block__text">
+                                        Я не любитель оставлять отзывы, но здесь не могла удержаться!) Когда ты видишь изменения в себе...
+                                    </p>
+                                    <a class="link__see_more">Показать больше</a>
+                                </div>
+                                <div class="reviews__block">
+                                    <h3 class="reviews__block__header">Марина</h3>
+                                    <p class="reviews__block__text">
+                                        Я не любитель оставлять отзывы, но здесь не могла удержаться!) Когда ты видишь изменения в себе...
+                                    </p>
+                                    <a class="link__see_more">Показать больше</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -319,16 +343,16 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <div class="footer_block">
+                    <div class="footer_block footer_block__left">
                         <div class="footer__header_wrapper">
                             <h2 class="footer__header title">Остались вопросы?</h2>
                         </div>
                         <div class="footer__form_wrapper">
-                            <span class="footer__form__title">Вы можете задать их блабла</span>
+                            <span class="footer__form__title">Вы можете задать их, я обязательно отвечу.</span>
                             <form class="footer__form">
                                 <input type="text" placeholder="Имя" class="footer__form__input input" />
                                 <input type="tel" placeholder="+375(__) ___ __ __" class="footer__form__input input" />
-                                <textarea placeholder="Сообщение" class="footer__form__input input"></textarea>
+                                <textarea placeholder="Сообщение" class="footer__form__input input textarea"></textarea>
                                 <button type="submit" class="footer__form__button button">
                   Задать вопрос
                 </button>
@@ -337,7 +361,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="footer_block">
+                    <div class="footer_block footer_block__right">
                         <div class="footer__header_wrapper">
                             <h2 class="footer__header title">Контакты</h2>
                         </div>
@@ -378,9 +402,33 @@
             </div>
         </div>
     </footer>
+    <!-- заказать звонок -->
+    <div class="modal fade" id="callback" tabindex="-1" role="dialog" aria-labelledby="callbackLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close modal__close" data-dismiss="modal" aria-label="Close">
+        </button>
+                <div class="modal-header">
+                    <h5 class="modal-title modal__title" id="callbackLabel">Заказать звонок</h5>
+                </div>
+                <div class="modal-body">
+                    <form class="modal__form">
+                        <input type="text" placeholder="Имя" class="modal__form__input input" />
+                        <input type="tel" placeholder="+375(__) ___ __ __" class="modal__form__input input" />
+                        <button type="submit" class="modal__form__button button">
+              Отправить
+            </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="./assets/plugins/owlCarousel/owl.carousel.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
