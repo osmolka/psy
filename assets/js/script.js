@@ -1,8 +1,19 @@
-$(document).ready(function() {
+$(document).ready(function () {
+    
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
     $('.owl-carousel').owlCarousel({
         loop: true,
-        margin: 30,
-        stagePadding: 30,
+        // margin: 30,
+        // stagePadding: 30,
         nav: true,
         navText: [],
         dots: true,
@@ -11,8 +22,17 @@ $(document).ready(function() {
                 items: 1
             },
             768: {
-                items: 3
+                items: 1
             },
         }
     })
+
+    $('.phone-mask').each(function () {
+        IMask(
+            this, {
+            mask: '+{375}(00)000-00-00'
+        });
+    });
+
+
 });
