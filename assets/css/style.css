@@ -433,8 +433,16 @@ header {
 }
 
 .certificates__header {
-    text-align: left;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
+}
+
+.certificates__text_wrapper {
+    margin-bottom: 50px;
+}
+
+.certificates__text {
+    font-size: 18px;
+    line-height: 30px;
 }
 
 .certificates {}
@@ -442,6 +450,11 @@ header {
 .certificates__info_wrapper {}
 
 .certificates__image_wrapper {}
+
+.certificate__block {
+    max-width: 276px;
+    margin: 0 auto;
+}
 
 .certificate__block__image {
     max-width: 100%;
@@ -506,8 +519,8 @@ header {
 .owl-carousel .owl-nav {}
 
 .owl-carousel .owl-nav button {
-    width: 60px;
-    height: 60px;
+    width: 13px;
+    height: 27px;
     position: absolute;
     top: 33%;
     opacity: 0.7;
@@ -523,12 +536,15 @@ header {
 }
 
 .owl-carousel .owl-nav button.owl-prev {
-    background-image: url("../images/arrow_prev.png");
+    background-image: url("../images/arrow.png");
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
     left: -60px;
 }
 
 .owl-carousel .owl-nav button.owl-next {
-    background-image: url("../images/arrow_next.png");
+    background-image: url("../images/arrow.png");
+    background-repeat: no-repeat;
     right: -60px;
 }
 
@@ -658,6 +674,27 @@ footer {
     line-height: 29px;
     color: #FFFFFF;
     margin-bottom: 0;
+}
+
+footer {
+    position: relative;
+}
+
+.up_button {
+    width: 80px;
+    height: 80px;
+    background-image: url("../images/up.png");
+    background-size: contain;
+    right: 95px;
+    bottom: 180px;
+    position: fixed;
+    z-index: 101;
+    cursor: pointer;
+    opacity: 0.7;
+    display: none;
+}
+.up_button:hover, .up_button:focus, .up_button:active {
+    opacity: 1;
 }
 
 /* modal */
