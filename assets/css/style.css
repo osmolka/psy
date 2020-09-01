@@ -197,8 +197,8 @@ header {
 }
 
 .banner_wrapper {
-    background: #C4C4C4 url("../images/main_banner.jpg") no-repeat;
-    background-size: 100%;
+    background: #C4C4C4 url("../images/main_banner.png") no-repeat;
+    background-size: cover;
     background-position: right;
     color: #FFFFFF;
     min-height: calc(100vh - 81px);
@@ -443,6 +443,7 @@ header {
 .certificates__text {
     font-size: 18px;
     line-height: 30px;
+    text-align: center;
 }
 
 .certificates {}
@@ -459,7 +460,7 @@ header {
 .certificate__block__image {
     max-width: 100%;
     width: auto !important;
-    height: 100%;
+    height: auto;
     margin: 0 auto;
 }
 
@@ -693,6 +694,7 @@ footer {
     opacity: 0.7;
     display: none;
 }
+
 .up_button:hover, .up_button:focus, .up_button:active {
     opacity: 1;
 }
@@ -764,8 +766,93 @@ footer {
     line-height: 24px;
 }
 
+@media(max-width: 1300px) {
+    .title__line::before {
+        width: 200px;
+    }
+    .certificates__header {
+        margin-bottom: 50px;
+    }
+}
+
 @media(max-width: 1199px) {
     .header__phone {
         font-size: 16px;
     }
+    .about_wrapper, .themes_wrapper, .callback_banner_wrapper, .services_wrapper, .certificates_wrapper, .reviews_wrapper {
+        padding: 75px 0;
+    }
+    .title {
+        margin-bottom: 50px;
+        font-size: 32px;
+        line-height: 38px;
+    }
+    .banner {
+        max-width: 998px;
+    }
+    .banner__header {
+        font-size: 48px;
+        line-height: 59px;
+    }
+    .header__callback_button {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .button {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .about__subtext__title {
+        font-size: 18px;
+    }
+    .about__text {
+        line-height: 22px;
+    }
+    .themes__block__text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .subtitle {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .services__block__text {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 20px 5px;
+    }
+    .services__block {
+        width: 30%;
+    }
+    .certificates__text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .reviews__block__header {
+        font-size: 24px;
+        line-height: 26px;
+    }
+    .reviews__block__text {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .footer__form__title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .footer__info__link {
+        font-size: 22px;
+        line-height: 26px;
+        background-size: 26px auto;
+    }
+    .copyright {
+        font-size: 20px;
+        line-height: 24px;
+    }
 }
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {}
