@@ -849,6 +849,20 @@ footer {
         font-size: 20px;
         line-height: 24px;
     }
+    .header__link {
+        padding: 0 15px;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    .title__line::before {
+        width: 0;
+    }
+    .owl-carousel .owl-nav button.owl-next {
+        right: -30px;
+    }
+    .owl-carousel .owl-nav button.owl-prev {
+        left: -30px;
+    }
 }
 
 @media (max-width: 992px) {}

@@ -34,12 +34,15 @@ $(document).ready(function () {
         navText: [],
         dots: true,
         responsive: {
-            0: {
+            768: {
                 items: 1
             },
-            768: {
-                items: 3
+            1099: {
+                items: 2
             },
+            1199 : {
+                items: 3
+            }
         }
     })
 
