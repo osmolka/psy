@@ -130,7 +130,9 @@ header {
     margin: 0 auto;
     /* position: relative; */
 }
-
+.navbar-toggler-icon {
+    background-image: url("../images/menu.png");
+}
 .header__collapse {
     justify-content: space-between;
 }
