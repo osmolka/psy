@@ -1,7 +1,7 @@
-$(document).ready(function () {
-    
+$(document).ready(function() {
+
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
+        anchor.addEventListener('click', function(e) {
             e.preventDefault();
 
             document.querySelector(this.getAttribute('href')).scrollIntoView({
@@ -34,33 +34,36 @@ $(document).ready(function () {
         navText: [],
         dots: true,
         responsive: {
-            768: {
+            0: {
                 items: 1
             },
-            1099: {
+            768: {
                 items: 2
             },
-            1199 : {
+            992: {
                 items: 3
             }
         }
     })
 
-    $('.phone-mask').each(function () {
+    $('.phone-mask').each(function() {
         IMask(
             this, {
-            mask: '+{375}(00)000-00-00'
-        });
+                mask: '+{375}(00)000-00-00'
+            });
     });
 
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 1000) {
-            $('#upButton').fadeIn();
-        } else {
-            $('#upButton').fadeOut();
+    $(window).scroll(function() {
+        if (window.screen.width > 768) {
+            if ($(this).scrollTop() > 1000) {
+                $('#upButton').fadeIn();
+            } else {
+                $('#upButton').fadeOut();
+            }
         }
+
     });
-    $('#upButton').click(function () {
+    $('#upButton').click(function() {
         $('body,html').animate({
             scrollTop: 0
         }, 400);

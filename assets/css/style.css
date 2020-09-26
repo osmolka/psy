@@ -43,6 +43,7 @@ html {
     background-size: cover;
 }
 
+
 /* .title__line::after {
     top: 50%;
     right: 0;
@@ -74,7 +75,9 @@ html {
     margin: 10px 0;
 }
 
-.button:hover, .button:active, .button:focus {
+.button:hover,
+.button:active,
+.button:focus {
     outline: none;
     border: none;
     background: linear-gradient(100.29deg, #72B74B 0%, #7BE63F 99.42%);
@@ -154,7 +157,9 @@ header {
     color: #1E1E1E;
 }
 
-.header__link:hover, .header__link:active, .header__link:focus {
+.header__link:hover,
+.header__link:active,
+.header__link:focus {
     text-decoration: underline;
     color: #1E1E1E;
     opacity: 0.6;
@@ -174,7 +179,9 @@ header {
     margin-right: 36px;
 }
 
-.header__phone:hover, .header__phone:active, .header__phone:focus {
+.header__phone:hover,
+.header__phone:active,
+.header__phone:focus {
     color: #1E1E1E;
     text-decoration: none;
     opacity: 0.6;
@@ -196,7 +203,9 @@ header {
     text-decoration-line: underline;
 }
 
-.link__see_more:active, .link__see_more:hover, .link__see_more:focus {
+.link__see_more:active,
+.link__see_more:hover,
+.link__see_more:focus {
     opacity: 1;
 }
 
@@ -370,6 +379,7 @@ header {
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .services__block {
@@ -531,12 +541,16 @@ header {
     opacity: 0.7;
 }
 
-.owl-carousel .owl-nav button:focus, .owl-carousel .owl-nav button:active, .owl-carousel .owl-nav button:hover {
+.owl-carousel .owl-nav button:focus,
+.owl-carousel .owl-nav button:active,
+.owl-carousel .owl-nav button:hover {
     border: none;
     outline: none;
 }
 
-.owl-carousel .owl-nav button:hover, .owl-carousel .owl-nav button:focus, .owl-carousel .owl-nav button:active {
+.owl-carousel .owl-nav button:hover,
+.owl-carousel .owl-nav button:focus,
+.owl-carousel .owl-nav button:active {
     opacity: 1;
 }
 
@@ -570,7 +584,9 @@ header {
     opacity: 0.6;
 }
 
-.owl-carousel button.owl-dot:hover, .owl-carousel button.owl-dot:focus, .owl-carousel button.owl-dot:active {
+.owl-carousel button.owl-dot:hover,
+.owl-carousel button.owl-dot:focus,
+.owl-carousel button.owl-dot:active {
     outline: none;
     opacity: 0.6;
 }
@@ -615,7 +631,9 @@ footer {
     background-position: left top;
 }
 
-.footer__info__link:active, .footer__info__link:focus, .footer__info__link:hover {
+.footer__info__link:active,
+.footer__info__link:focus,
+.footer__info__link:hover {
     text-decoration: none;
     color: #FFFFFF;
     opacity: 0.7;
@@ -699,9 +717,12 @@ footer {
     display: none;
 }
 
-.up_button:hover, .up_button:focus, .up_button:active {
+.up_button:hover,
+.up_button:focus,
+.up_button:active {
     opacity: 1;
 }
+
 
 /* modal */
 
@@ -783,7 +804,12 @@ footer {
     .header__phone {
         font-size: 16px;
     }
-    .about_wrapper, .themes_wrapper, .callback_banner_wrapper, .services_wrapper, .certificates_wrapper, .reviews_wrapper {
+    .about_wrapper,
+    .themes_wrapper,
+    .callback_banner_wrapper,
+    .services_wrapper,
+    .certificates_wrapper,
+    .reviews_wrapper {
         padding: 75px 0;
     }
     .title {
@@ -885,7 +911,10 @@ footer {
     .banner {
         max-width: 100%;
     }
-    .banner__header, .banner__subheader, .banner__text, .banner__button_wrapper {
+    .banner__header,
+    .banner__subheader,
+    .banner__text,
+    .banner__button_wrapper {
         text-align: center;
     }
     .banner__subheader {
@@ -912,6 +941,12 @@ footer {
     .header__callback_button {
         margin: 15px 0 25px 0;
     }
+    .header__social__list {
+        justify-content: center;
+    }
+    .banner__button {
+        margin-bottom: 50px;
+    }
     .about__info {
         flex-wrap: wrap;
     }
@@ -932,19 +967,59 @@ footer {
         margin-bottom: 20px;
         text-align: center;
     }
-    .callback_banner__form_wrapper  {
+    .callback_banner__form_wrapper {
         text-align: center;
+    }
+    .callback_banner__form input {
+        margin: 0 auto 20px;
     }
     .services__block {
         width: 100%;
-        margin-bottom: 30px;
+        margin: 0 auto 30px auto;
     }
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    .input {
+        margin: 0 auto;
+    }
+    .up_button {
+        display: none;
+    }
+    .footer_block__left {
+        max-width: 100%;
+        margin: 0 0 40px;
+        text-align: center;
+    }
+    .footer__header {
+        text-align: center;
+    }
+    .footer__info_wrapper {
+        padding: 0;
+        max-width: 312px;
+        margin: 0 auto;
+    }
+    .footer__info__link {
+        padding-left: 40px;
+    }
+    .footer__social__delimiter {
+        display: none;
+    }
+    .footer__social__list {
+        justify-content: center;
+    }
+    .copyright_wrapper {
+        padding: 40px 0 0;
+    }
+}
 
 @media (max-width: 576px) {
-    .about_wrapper, .themes_wrapper, .callback_banner_wrapper, .services_wrapper, .certificates_wrapper, .reviews_wrapper {
+    .about_wrapper,
+    .themes_wrapper,
+    .callback_banner_wrapper,
+    .services_wrapper,
+    .certificates_wrapper,
+    .reviews_wrapper {
         padding: 40px 0;
     }
     .title {
@@ -973,11 +1048,12 @@ footer {
     .button {
         font-size: 16px;
     }
-    .banner__button {
-        margin-bottom: 0;
-    }
-    .footer__social_wrapper {
-        display: none;
+    .input {
+        border-radius: 10px;
+        height: 40px;
+        font-size: 14px;
+        line-height: 16px;
+        padding: 10px 20px;
     }
     .about__text {
         line-height: 20px;
@@ -986,7 +1062,7 @@ footer {
     .themes__block__img {
         max-width: 58px;
     }
-    .themes__header  {
+    .themes__header {
         max-width: 195px;
         margin: 0 auto 40px auto;
     }
@@ -998,5 +1074,41 @@ footer {
     }
     .owl-carousel .owl-nav {
         display: none;
+    }
+    .reviews__block_wrapper {
+        padding: 0 20px;
+    }
+    .reviews__block__header {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .reviews__block__text {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .reviews__block {
+        padding: 0;
+        margin: 0 auto;
+    }
+    footer {
+        padding: 40px 20px;
+    }
+    .footer__info_wrapper {
+        max-width: 225px;
+    }
+    .footer__form__title {
+        font-size: 12px;
+        line-height: 14px;
+        margin-bottom: 20px;
+    }
+    .footer__info__link {
+        font-size: 14px;
+        line-height: 16px;
+        background-size: 20px auto;
+        font-weight: 400;
+    }
+    .copyright {
+        font-size: 12px;
+        line-height: 24px;
     }
 }
