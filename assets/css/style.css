@@ -591,7 +591,7 @@ header {
     opacity: 0.6;
 }
 
-.articles_wrapper {
+.content_wrapper {
     padding: 150px 0;
     background: #FFFFF2;
     color: #1E1E1E;
@@ -890,7 +890,7 @@ footer {
     .services_wrapper,
     .certificates_wrapper,
     .reviews_wrapper,
-    .articles_wrapper {
+    .content_wrapper {
         padding: 75px 0;
     }
     .title {
@@ -1120,7 +1120,7 @@ footer {
     .services_wrapper,
     .certificates_wrapper,
     .reviews_wrapper,
-    .articles_wrapper {
+    .content_wrapper {
         padding: 40px 0;
     }
     .title {
